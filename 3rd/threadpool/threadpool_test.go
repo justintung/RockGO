@@ -69,7 +69,7 @@ func TestTTT(T *testing.T) {
 
 	}
 
-	wg1.Done()
+	wg1.Wait()
 	elapsed1 := time.Since(t1)
 	println("pool:", elapsed1)
 
